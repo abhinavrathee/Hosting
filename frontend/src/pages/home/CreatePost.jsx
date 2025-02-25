@@ -27,7 +27,7 @@ const CreatePost = () => {
                     formData.append("image", img);
                 }
 
-                const res = await fetch("/api/posts/create", {
+                const res = await fetch("${API_URL}/posts/create", {
                     method: "POST",
                     body: formData,
                 });
